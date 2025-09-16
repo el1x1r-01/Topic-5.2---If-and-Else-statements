@@ -107,9 +107,9 @@
                 Console.WriteLine("That is an A!");
             }
 
-            //programming tasks
+           //programming tasks
 
-            //task 1
+                //task 1
 
             string answer;
 
@@ -171,9 +171,72 @@
                 Console.WriteLine("Sapphire is the birthstone of September!");
             }
 
+            else
+            {
+                Console.WriteLine("That is not a valid answer. The correct answer is: c)");
+            }
+
             //task 2
 
-            Console.ReadLine();
+            double temperature;
+
+            Console.WriteLine("");
+            Console.WriteLine("Input a temperature in degrees celsius.");
+            double.TryParse(Console.ReadLine(), out temperature);
+
+            Console.WriteLine("");
+
+            Console.WriteLine("You have entered: " + temperature + "°C");
+
+            if (temperature <= 0)
+            {
+                Console.WriteLine("Your water is frozen!");
+            }
+
+            else if (temperature < 100)
+            {
+                Console.WriteLine("Your water is water!");
+            }
+
+            else if (temperature >= 100)
+            {
+                Console.WriteLine("Your water evaporated!");
+            }
+
+            //task 3
+
+            Console.WriteLine("");
+            Console.WriteLine("How old are you?");
+            Int32.TryParse(Console.ReadLine(), out age);
+
+            Console.WriteLine("");
+
+            if (age <= 0)
+            {
+                Console.WriteLine("That is not a valid age.");
+            }
+
+            else if (age < 16)
+            {
+                Console.WriteLine("You can't drive.");
+            }
+
+            else if (age < 18)
+            {
+                Console.WriteLine("You can drive but not vote.");
+            }
+
+            else if (age < 24)
+            {
+                Console.WriteLine("You can drive and vote but not rent a car.");
+            }
+
+            else if (age >= 25)
+            {
+                Console.WriteLine("You can do pretty much anything.");
+            }
+
+                Console.ReadLine();
         }
     }
 }
